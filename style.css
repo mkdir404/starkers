@@ -23,6 +23,35 @@ CONTENTS:
 ---------------------------------------------------------------------------------------------------------- */
 
 @import "css/reset.css";
+/*Google Fonts import collection*/
+@import url(http://fonts.googleapis.com/css?family=News+Cycle|Poiret+One|Keania+One|Cinzel+Decorative|Comfortaa|Qwigley);
+
+/*@font-face {
+    font-family: DeliciousRoman;
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;Cuprum-Regular.ttf
+}*/
+
+@font-face {
+    font-family: LeagueGothic;
+    src: url(fonts/League-Gothic.otf);
+    font-weight:400;
+}
+
+@font-face {
+    font-family: Cuprum;
+    src: url(fonts/Cuprum-Bold.ttf);
+    font-weight:400;
+}
+
+/*
+font-family: 'News Cycle', sans-serif;-----
+font-family: 'Poiret One', cursive;-----
+font-family: 'Keania One', cursive;
+font-family: 'Cinzel Decorative', cursive;---
+font-family: 'Comfortaa', cursive;
+font-family: 'Qwigley', cursive;----
+*/
 
 div,
 article,
@@ -77,4 +106,406 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 
 					{ /* Place your styles here for all 'Retina' screens */ }
 
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ Contenedor  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+.pagecontent{
+	width: 1004px;
+	margin:0 auto;
+	padding: 0px;
+	/*border: 1px solid #DDD;*/
+	padding-top: 90px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ Header  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+header{
+
+}
+
+.search {
+	
+		
+}
+
+.logo {
+	color:#292929;
+	margin-bottom: 10px;
+}
+
+.logo span.shot{
+	color:rgb(92.905%, 40.05%, 21.604%);
+	font-family: 'Comfortaa', cursive;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.logo span.sim {
+	color:#40d0ff;
+	font-weight: bold;
+	font-family: 'Comfortaa', cursive;
+	font-size: 80px;
+	
+}
+
+.logo span.code{
+		font: 55px/65px 'LeagueGothic',Arial,sans-serif;
+	margin-left: -6px;
+	font-size: 70px;
+
+}
+
+.slogan{
+	font-size: 20px;
+	font-family: helvetica;
+	color:#DDD;
+}
+
+.search{
+	background-color: #535353;
+	margin-right: 30px;
+	height: 30px;
+	padding: 10px;
+	width: 250px;
+}
+
+.inputSearch{
+	float: left;
+	width: 200px;
+	height: 25px;
+}
+
+.imgSearch{
+	float: right;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ Menu Cat  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+.menu{
+	/*background: #2e2e2e url(images/nav_bar.jpg) repeat-x;*/
+	background-color: #535353;
+	height:54px;
+	/*position: fixed;*/
+	width: 100%;
+	z-index: 1;
+}
+
+.menu ul.menu-2{
+	width: 1004px;
+	margin:0 auto;
+	margin-top: 20px;
+	
+}
+.menu ul.menu-2 > li {
+	float: left;
+}
+
+.menu ul.menu-2 > li {
+	margin-left: 0px;
+	padding: 10px;
+}
+
+.menu ul.menu-2 > li > a {
+	text-decoration: none;
+	color:#FFFFFF;
+	font-family: 'Cuprum', cursive;
+	text-transform: uppercase;
+	font-size: 20px;
+	padding: 10px;
+
+}
+
+.menu ul.menu-2 >  li:hover {
+	background-color: #40d0ff;
+	padding: 10px;
+	/*border-bottom: 3px solid rgb(92.905%, 40.05%, 21.604%);*/
+	/*background: #1b1b1b url(images/nav_bar_o.jpg) repeat-x;*/
+
+}
+
+ul.children{
+	margin-left: -10px;
+	position: absolute;
+	background-color: #535353;
+	width: 180px;
+	margin-top: 8px;
+	box-shadow: inset 0 5px #40d0ff;
+}
+
+.menu ul.menu-2 li ul.children li{
+	margin-top: 0px;
+	border-bottom: 1px solid #333;
+	padding: 14px;
+	cursor: pointer;
+}
+
+.menu ul.menu-2 li ul.children li:hover{
+	background-color:#333;
+	padding: 14px;
+}
+
+.menu ul.menu-2 li ul.children li a{
+ 	font-size: 13px;
+ 	font-family: helvetica;
+ 	color:#FFF;
+ 	text-decoration: none;
+ 	padding: 14px;
+}
+
+
+
+.displayNone{
+	display: none;	
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+ General Tag HTML5 Theme ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+body{
+	background-color: #f1f1f1;
+}
+
+footer{
+	background-color: #292929;
+	background: #292929 url(http://conecti.ca/wp-content/themes/conectica/images/footer_container.png) top center no-repeat;
+	height: 300px;
+	margin-top: 40px;
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ Post ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+article{
+	width: 650px;
+	/*border: 3px solid #f1f1f1;*/
+	margin-bottom: 26px;
+	font-family: "Helvetica",sans-serif;
+	background-color: #FFF;
+	padding: 8px;
+	border: solid 1px #DDD;
+
+
+}
+
+h2.title-post a{
+	
+	color: #333;
+	text-decoration: none;
+	font: 55px/65px 'LeagueGothic',Arial,sans-serif;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	line-height: 0.95em;
+}
+
+h2.title-post span.sim{
+	color:#40d0ff;
+	font-weight: bold;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 35px;
+}
+
+.content-post{
+	text-align: justify;
+	padding: 10px;
+	font-family: helvetica , arial;
+	font-size: 16px;
+	font-family: 'Droid Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: -0.04em;
+	word-spacing: -0.04em;
+	line-height: 1.3em;
+	color: #111;
+}
+
+.readmore{
+	margin-top:18px;
+	margin-left: -29px;
+	padding:8px;
+	width: 180px; 
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #40d0ff;
+}
+
+.readmore a {
+	text-decoration: none;
+	color:#535353;
+}
+.readmore span {
+	color:#fff;
+}
+
+.dataTime , .commentNum{
+	clear: both;
+	width: 130px;
+	padding: 8px;
+	color:white;
+	
+}
+
+.dataTime{
+	margin-top: -30px;
+	background-color: #40d0ff;
+}
+
+.dataTime h1 {
+	text-align: center;
+}
+
+.commentNum{
+	margin-left: -20px;
+	background-color: #535353;
+	width: 180px;
+}
+
+.commentNum a {
+	text-decoration: none;
+	color:white;
+}
+
+.imgThum img{
+	margin-top:10px;
+	margin-bottom: 10px; 
+	width: 640px;
+	height: 250px;
+}
+
+.infoPost{
+	padding: 10px;
+	font-size: 13px;
+	margin-bottom: 3%;
+}
+
+.infoPost p {
+	color:#cdcdcd;
+	font-size: 'Helvetica',sans-serif;
+	padding-top: 5px;
+}
+
+.infoPost span {
+	color:#666;
+	font-size: 'Helvetica',sans-serif;
+	font-weight: 100px;
+}
+
+.infoPost img{
+	float: left;
+	padding-right: 10px;
+}
+
+.calendario{
+	padding: 10px;
+	background-image: url(images/Google_Calendar.png);
+	width:90px;
+	height:90px;
+}
+
+.auto:before{
+	  content:url(images/user_mini.png);
+	  margin-right: 5px;
+	  
+}
+
+.dateInfo:before{
+	  content:url(images/calendario.png);
+	  margin-right: 5px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ Category  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+.titleCategory{
+	font-size: 30px;
+	font-family: 'Helvetica',sans-serif;
+	border-bottom: 1px solid #ddd;
+	width: 600px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	color:#535353;
+}
+
+.titleCategory span{
+	color:#cdcdcd;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ sideBar  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+.sidebar{
+	float: right;
+	width: 200px;
+	clear: both;
+	margin-right: 60px;
+	margin-top: 30px;
+	display: none;
+}
+
+.sidebar img {
+	width: 200px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ShadowBoxDiv ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+.efecto2
+{
+  position: relative;
+}
+.efecto2:before, .efecto2:after
+{
+/* Posiciona la sobora por detras del color de la caja*/
+                  z-index: -1;
+                  position: absolute;
+                  /* no aplico ningún contenidos HTML */
+                  content: "";
+                  /* posiciona la sombra con respecto al borde inferior, izquierdo y superior */
+                  bottom: 15px;
+                  left: 10px;
+                  top: 80%;
+                  /* configura el ancho */
+                  width: 50%;
+/* color de fondo */
+                  background: #777;
+                  /* definicion de la sombra estandar para box-shadow */
+                  -webkit-box-shadow: 0 15px 10px #777;
+                  -moz-box-shadow: 0 15px 10px #777;
+                  box-shadow: 0 15px 10px #777;
+                  /* rotacion de la sombra */
+                  -webkit-transform: rotate(-3deg);
+                  -moz-transform: rotate(-3deg);
+                  -o-transform: rotate(-3deg);
+                  -ms-transform: rotate(-3deg);
+                  transform: rotate(-3deg);
+}
+
+.efecto2:after
+{
+                   rotacion de la sombra 
+                  -webkit-transform: rotate(3deg);
+                  -moz-transform: rotate(3deg);
+                  -o-transform: rotate(3deg);
+                  -ms-transform: rotate(3deg);
+                  transform: rotate(3deg);
+                  posiciona la sombra con respecto al borde izquierdo y derecho 
+                  right: 10px;
+                  left: auto;
 }
