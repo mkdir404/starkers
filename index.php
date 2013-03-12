@@ -23,7 +23,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<li class="post" id="<?php the_ID(); ?>">
-		<article class='efecto2'>
+		<article >
 			<h2 class="title-post"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<div class="infoPost">
 				 <?php 

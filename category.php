@@ -22,7 +22,7 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<li class="post" id="<?php the_ID(); ?>">
-		<article class='efecto2'>
+		<article >
 			<h2 class="title-post"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<div class="infoPost">
 				 <?php 
@@ -39,10 +39,10 @@
 				
 				 ?>
 			</div>	
-			<div class="content-post">
-					<?php the_content("<div class='readmore'><span>Seguir Leyendo : </span> " . the_title('', '', false).' </div>' ); ?>
+			<div class="content-post ">
+					<?php the_content("<div class='readmore '><span>Seguir Leyendo .. </span> </div>" ); ?>
 			</div>
-			<div class="commentNum">
+			<div class="commentNum ">
 				<?php comments_popup_link('++ Comentar', '1 Comentario', '% Comments'); ?>
 			</div>	
 		</article>
