@@ -286,7 +286,7 @@ a{
 /* ---------------------------------------------------------------------------------------------------------- 
  Post ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
-article{
+article , .autoinfo{
 	width: 650px;
 	/*border: 3px solid #f1f1f1;*/
 	margin-bottom: 26px;
@@ -315,7 +315,7 @@ h2.title-post span.sim{
 	font-size: 35px;
 }
 
-.content-post{
+.content-post , .descrip {
 	text-align: justify;
 	padding: 10px;
 	font-family: helvetica , arial;
@@ -340,7 +340,7 @@ h2.title-post span.sim{
 	border-bottom: 1px solid #DDD;
 	font-size: 13px;
 	font-weight: bold;
-	background-color: #40d0ff;
+	background-color: rgb(92.905%, 40.05%, 21.604%);
 }
 
 .readmore a {
@@ -426,6 +426,31 @@ h2.title-post span.sim{
 	  content:url(images/calendario.png);
 	  margin-right: 5px;
 }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+ Author Info  ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+
+.autoinfo img {
+	float: left;
+	padding-right: 15px;
+}
+
+.autoinfo h3 {
+	padding-bottom: 10px;
+	width: 600px;
+	font-family: 'Cuprum', cursive;
+	text-transform: uppercase;
+	color:rgb(92.905%, 40.05%, 21.604%);
+	font-size: 20px;
+}
+
+.autoinfo span{
+	color:#535353;
+}
+
+
 
 /* ---------------------------------------------------------------------------------------------------------- 
  Category  ------------------------------------------------------------
