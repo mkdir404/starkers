@@ -53,11 +53,28 @@
 			<?php endif; ?>
 
 
-		</div>	
+		</div>
+<!-- 
+		<div class="radomPost">  barra lateral 
+			
+			<h3>Random Posts</h3>	
 
+			<ul>	
+		
+			<?php
+			
+				$args = array( 'numberposts' => 5, 'orderby' => 'rand' );
+				$rand_posts = get_posts( $args );
+			
+				foreach( $rand_posts as $post ) : ?>
+					<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>	
+				<?php endforeach; ?>	
 
+			</ul>
+			
+		</div>	 -->
 
-	<?php //comments_template( '', true ); ?>
+	<?php comments_template( '', true ); ?>
 
 <?php endwhile; ?>
 
