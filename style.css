@@ -523,8 +523,9 @@ MenuPestañasPost ------------------------------------------------------------
 
 #contenido_pestanas ul  {  
 	 display: block; 
-	 height: 39px; 
+	 height: 30px; 
 	 font-size: 25px;
+	 font-family: 'Cuprum', cursive;
 }
 
 #contenido_pestanas ul li { 
@@ -534,14 +535,16 @@ MenuPestañasPost ------------------------------------------------------------
 
 #contenido_pestanas a {  
 
-	float: left; padding: 5px 11px; 
+	float: left; 
+	padding: 5px 11px; 
 	list-style: none; 
 	text-decoration: none; 
 	color:#535353; 
 	font-weight: bold;
+
 }
 
-#contenido_pestanas a:hover  {   
+#contenido_pestanas > a:hover  {   
 	
 	background-color: #999; 
 	color: #FFF;
@@ -551,29 +554,41 @@ MenuPestañasPost ------------------------------------------------------------
 	
 	background-color: 	#535353; 
 	color: #FFF; box-shadow: 3px 0px 2px #ccc;
-     -webkit-box-shadow: 3px 0px 2px #ccc; 
-     -moz-box-shadow: 3px 0px 2px #ccc;
+     /*-webkit-box-shadow: 3px 0px 2px #ccc; 
+     -moz-box-shadow: 3px 0px 2px #ccc;*/
  }
 #contenido_pestanas div  {   
 	
-	border: 1px solid #333; 
+	border: solid 1px #DDD;
 	width: 300px; 
 	background: #fff; 
-	padding: 10px;  
-	margin-left: 0px;
+	padding: 10px;
+	z-index: -1000;  
 }
 
 #contenido_pestanas div ul { 
 
-	width:280px; 
+	width:300px;
+	margin-top: 8px; 
 
 } 
 
 #contenido_pestanas div ul  li { 
-	font-size: 15px; 
-	height: 40px; 
+	
+	font-size: 12px;
+	padding-bottom: 10px; 
 	font-family: arial; 
-	border-bottom: 1px  solid #111; 
-	padding: 10px;
 
 }    
+
+#contenido_pestanas div ul  li span { 
+	font-size: 28px;
+	padding-right: 6px;
+	float: left;
+	color:rgb(92.905%, 40.05%, 21.604%);
+}
+
+#contenido_pestanas div ul  li a {
+	width: 250px;	
+}
+

@@ -12,7 +12,7 @@
  		  }
 		);
 	
-    	$('#contenido_pestanas a').click(function(){
+    	$('#contenido_pestanas :first a').click(function(){
         	
         	$('#contenido_pestanas a').removeClass('aqui');
        		$(this).addClass('aqui');
