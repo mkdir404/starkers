@@ -385,9 +385,15 @@ h2.title-post span.sim{
 }
 
 .infoPost{
-	padding: 10px;
+	padding: 6px;
 	font-size: 13px;
 	margin-bottom: 3%;
+	border: 1px solid #DDD;
+	width: 100px;
+	background-color: white;
+	position: absolute;
+	top:5px;
+	z-index: -1000;
 }
 
 .infoPost p {
@@ -397,14 +403,16 @@ h2.title-post span.sim{
 }
 
 .infoPost span {
-	color:#666;
+	color:white;
 	font-size: 'Helvetica',sans-serif;
 	font-weight: 100px;
+	text-transform: uppercase;
 }
 
 .infoPost img{
 	float: left;
 	padding-right: 10px;
+	padding-bottom: 5px;
 }
 
 .calendario{
@@ -414,15 +422,41 @@ h2.title-post span.sim{
 	height:90px;
 }
 
-.auto:before{
+/*.auto:before{
 	  content:url(images/user_mini.png);
-	  margin-right: 5px;
+	  margin-right: 2px;
 	  
 }
 
 .dateInfo:before{
 	  content:url(images/calendario.png);
-	  margin-right: 5px;
+	  margin-right: 2px;
+}*/
+
+
+.auto span{
+	color:#535353;
+	font-weight: 800;
+	padding-left: 3px;
+}
+
+.dateInfo span{
+	display:block;
+}
+
+.dDate{
+	font-size: 25px;
+	margin-left: 15px;
+	background-color: rgb(92.905%, 40.05%, 21.604%);
+	width: 30px;
+	padding: 8px;
+}
+
+.myDate{
+	background-color:#535353;
+	width: 70px;
+	padding: 4px;
+	margin-top: 3px;
 }
 
 
@@ -578,6 +612,7 @@ MenuPestañasPost ------------------------------------------------------------
 	font-size: 12px;
 	padding-bottom: 10px; 
 	font-family: arial; 
+	text-transform: uppercase;
 
 }    
 
@@ -586,6 +621,7 @@ MenuPestañasPost ------------------------------------------------------------
 	padding-right: 6px;
 	float: left;
 	color:rgb(92.905%, 40.05%, 21.604%);
+	font-weight: 800;
 }
 
 #contenido_pestanas div ul  li a {

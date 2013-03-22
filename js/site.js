@@ -22,5 +22,18 @@
         
     	});
 
+    	$('.loop-post').hover(function(){
+    		
+    		find = $(this).find('.infoPost').attr('class');
+    		find = find.split(' ');
+    		findId = find[1];
+
+    		 $("."+findId).animate({"left": "-=90px"}, "slow");
+		},function () {
+			
+   			 $("."+findId).delay(800).animate({"left": "+=90px"}, "slow");
+ 		  }
+		);
+
 	});
 
