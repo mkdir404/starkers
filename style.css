@@ -130,7 +130,7 @@ header{
 
 .logo {
 	color:#292929;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	margin-left: 60px;
 }
 
@@ -272,11 +272,12 @@ body{
 }
 
 footer{
-	background-color: #292929;
-	background: #292929 url(http://conecti.ca/wp-content/themes/conectica/images/footer_container.png) top center no-repeat;
-	height: 300px;
+	/*background-color: #292929;*/
+	/*background: #292929 url(http://conecti.ca/wp-content/themes/conectica/images/footer_container.png) top center no-repeat;*/
+	height: 10px;
 	margin-top: 40px;
 	clear: both;
+	width: 100%;
 }
 
 a{
@@ -287,7 +288,7 @@ a{
  Post ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 article , .autoinfo{
-	width: 650px;
+	width: 675px;
 	/*border: 3px solid #f1f1f1;*/
 	margin-bottom: 26px;
 	font-family: "Helvetica",sans-serif;
@@ -296,7 +297,7 @@ article , .autoinfo{
 	border: solid 1px #DDD;
 }
 
-h2.title-post a{
+h2.title-post a , .page-tmpl h2{
 	
 	color: #333;
 	text-decoration: none;
@@ -313,7 +314,7 @@ h2.title-post span.sim{
 	font-size: 35px;
 }
 
-.content-post , .descrip , .radomPost {
+.content-post , .descrip , .radomPost , .page-tmpl , .submenu a  {
 	text-align: justify;
 	padding: 10px;
 	font-family: helvetica , arial;
@@ -459,6 +460,12 @@ h2.title-post span.sim{
 	margin-top: 3px;
 }
 
+.content-post  iframe{
+	background-color: #DDD;
+	padding: 15px;
+	margin: 10px 0 0 30px;
+
+}
 
 /* ---------------------------------------------------------------------------------------------------------- 
  PostSingle  ------------------------------------------------------------
@@ -473,20 +480,21 @@ h2.title-post span.sim{
 	border-bottom: solid 1px #DDD;
 	padding: 5px;
 	font-family: "Helvetica",sans-serif;
-	font-size: 13px;
+	font-size: 10px;
 	background-color: #ddd;
 }
 
 .radomPost ul  li a {
 	color:#333;
 	padding-bottom: 10px;
-	text-transform: lowercase;
+	text-transform: uppercase;
+	font-weight: 800;
 }
 
 .radomPost ul  li a:before{
 	content:url('images/list_arrow.png');
 	margin-right: 5px;
-	width: 5px;
+	width: 2px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------- 
@@ -586,7 +594,7 @@ MenuPestañasPost ------------------------------------------------------------
 
 #contenido_pestanas a.aqui  {   
 	
-	background-color: 	#535353; 
+	background-color: #535353; 
 	color: #FFF; box-shadow: 3px 0px 2px #ccc;
      /*-webkit-box-shadow: 3px 0px 2px #ccc; 
      -moz-box-shadow: 3px 0px 2px #ccc;*/
@@ -628,3 +636,58 @@ MenuPestañasPost ------------------------------------------------------------
 	width: 250px;	
 }
 
+
+/* ---------------------------------------------------------------------------------------------------------- 
+Pages-template ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+.page-tmpl  {
+	width: 900px;
+	border: 1px solid #111;
+	padding: 40px;
+	background-color: white;
+	border: 1px solid #DDD;
+}
+
+.page-tmpl p {
+	padding-bottom: 10px;
+}
+
+.page-tmpl h2 {
+	padding-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- 
+Sub-Menu ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+.submenu{
+	width: 830px;
+	top:0px;
+	left: 102px;
+	background-color:#DDD;
+	padding: 10px;
+}
+.submenu ul {
+	margin-bottom: 14px;
+}
+
+.submenu li {
+	float: left;
+	padding-right: 10px;
+	padding-left: 5px;
+	border-right: 1px dashed #535353;
+
+
+}
+
+.submenu a {
+	color:#535353;
+	text-align: justify;
+	padding: 10px;
+	font-family: helvetica , arial;
+	font-size: 12px;
+	font-family: 'Droid Sans',sans-serif;
+	font-style: normal;
+
+
+}

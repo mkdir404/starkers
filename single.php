@@ -47,8 +47,8 @@
 
 
 		</div>
-<!-- 
-		<div class="radomPost">  barra lateral 
+ 
+		<div class="radomPost"> 
 			
 			<h3>Random Posts</h3>	
 
@@ -65,7 +65,7 @@
 
 			</ul>
 			
-		</div>	 -->
+		</div>	 
 
 	<?php comments_template( '', true ); ?>
 

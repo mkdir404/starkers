@@ -95,3 +95,47 @@
 			</article>
 		<?php endif;
 	}
+
+
+	/* ========================================================================================================================
+	
+	DessQuery Comment and Current Post
+	
+	======================================================================================================================== */
+
+	/**
+	 * Custom callback for outputting post y comentarios  recientes  
+	 *
+	 * @return void
+	 * @author Ricardo Alba
+	 */
+
+	function descQuery($args){
+
+		$i=1;
+		global $wpdb;
+		
+       	 $queryComment = $wpdb->get_results("SELECT guid , post_title 
+       	 										FROM wp_posts 
+       	 											WHERE post_type = 'post' 
+       	 												AND post_status = 'publish'  
+       	 													ORDER BY  ".$args."  DESC LIMIT 10"
+                                           );
+
+           if(count($queryComment) > 0){
+
+                foreach ($queryComment as  $value) {
+                 	echo '<li><span>'.$i.'</span><a href ="'.$value->guid.'" >'.$value->post_title.'</a></li>';
+                 	$i+=1;   
+                }
+
+            } else {
+                    echo '<li>No Contiene Post`s </li>'.$queryComment;
+            }
+	}
+
+
+
+
+
+
