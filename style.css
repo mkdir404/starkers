@@ -314,7 +314,7 @@ h2.title-post span.sim{
 	font-size: 35px;
 }
 
-.content-post , .descrip , .radomPost , .page-tmpl , .submenu a  {
+.content-post , .descrip , .radomPost , .page-tmpl   {
 	text-align: justify;
 	padding: 10px;
 	font-family: helvetica , arial;
@@ -330,25 +330,6 @@ h2.title-post span.sim{
 	color: #111;
 }
 
-.readmore{
-	margin-top:18px;
-	margin-left: -29px;
-	padding:8px;
-	width: 180px; 
-	border-top: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	font-size: 13px;
-	font-weight: bold;
-	background-color: rgb(92.905%, 40.05%, 21.604%);
-}
-
-.readmore a {
-	text-decoration: none;
-	color:#535353;
-}
-.readmore span {
-	color:#fff;
-}
 
 .dataTime , .commentNum{
 	clear: both;
@@ -461,7 +442,8 @@ h2.title-post span.sim{
 }
 
 .content-post  iframe{
-	background-color: #DDD;
+	background-color: #f1f1f1;
+	border:1px solid #DDD;
 	padding: 15px;
 	margin: 10px 0 0 30px;
 
@@ -520,6 +502,19 @@ h2.title-post span.sim{
 	color:#535353;
 }
 
+/*Demo button controler*/
+
+.control-button {
+	border-top: 1px solid #DDD;
+	padding-top: 10px;
+}
+
+.control-button p {
+	display: inline-block;
+	border-right: 1px solid #DDD;
+	padding: 10px;
+	cursor: pointer;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------- 
@@ -612,7 +607,6 @@ MenuPestañasPost ------------------------------------------------------------
 
 	width:300px;
 	margin-top: 8px; 
-
 } 
 
 #contenido_pestanas div ul  li { 
@@ -661,14 +655,16 @@ Pages-template ------------------------------------------------------------
 Sub-Menu ------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 .submenu{
-	width: 830px;
+	width: 100%;
 	top:0px;
-	left: 102px;
-	background-color:#DDD;
-	padding: 10px;
+	background-color:white;
+	padding: 20px;
+	border: 1px solid #DDD;
 }
 .submenu ul {
-	margin-bottom: 14px;
+	margin-top: -10px;
+	margin-right: 100px;
+	float: right;
 }
 
 .submenu li {
@@ -676,18 +672,61 @@ Sub-Menu ------------------------------------------------------------
 	padding-right: 10px;
 	padding-left: 5px;
 	border-right: 1px dashed #535353;
+}
 
+
+.submenu a {
+	color:#111;
+	text-align: justify;
+	padding: 10px;
+	font-size: 14px;
+	font-family: 'Droid Sans',sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	word-spacing: 0.08em;
+	line-height: 1.3em;
 
 }
 
-.submenu a {
-	color:#535353;
-	text-align: justify;
-	padding: 10px;
-	font-family: helvetica , arial;
-	font-size: 12px;
-	font-family: 'Droid Sans',sans-serif;
-	font-style: normal;
+.apend{
+	border: 5px solid #ddd;
+	display: none;
+}
 
 
+.no_scroll{
+    overflow:hidden;
+}
+
+.screen{
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+	position: absolute;
+	z-index: 6000;
+	top: 0px;
+	left: 0px;
+	overflow:auto;
+	position: fixed;
+	opacity: .80;
+   -moz-opacity: .80;
+   filter:alpha(opacity=80);
+}
+
+.noneDisplay{
+	display: none;
+}
+
+/*facebook like*/
+.fb-like , .twitter-share-button{
+	margin-top: 8px;
+	float: right;
+	padding-right: 10px;
+}
+
+/*Dinamic Css*/
+
+.fix-position{
+	position: fixed;
 }

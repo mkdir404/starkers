@@ -1,5 +1,7 @@
 
 	<header>
+
+			<?php  wp_page_menu('show_home=1&menu_class=submenu'); ?>
 		
 		<!-- <h1><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php bloginfo( 'description' ); ?> -->
@@ -10,7 +12,7 @@
 			<!-- <span class="slogan">::simpleCode</span> -->
 				<p>/*ping pong code*/</p>
 			</div> <!-- end .logo -->
-		<?php  wp_page_menu('show_home=1&menu_class=submenu'); ?>
+	
 			<div class="search"><?php get_search_form(); ?></div>
 			<div class="menu">
 				<ul class='menu-2'>
@@ -21,6 +23,8 @@
 
 	</header>
 
-
+		<div class="apend"></div>
 <div class="pagecontent">
+
+
 

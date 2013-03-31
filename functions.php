@@ -134,6 +134,10 @@
             }
 	}
 
+	function hola(){
+		return 'hola';
+	}
+
 
 
 

@@ -47,11 +47,20 @@
 				 ?>
 			</div>	
 			<div class="content-post ">
-					<?php the_content("<div class='readmore '><span>Seguir Leyendo .. </span> </div>" ); ?>
+					<?php the_content(''); ?>
 			</div>
-			<div class="commentNum ">
-				<?php comments_popup_link('++ Comentar', '1 Comentario', '% Comments'); ?>
-			</div>	
+			<!-- <div class="commentNum ">
+				<?php //comments_popup_link('++ Comentar', '1 Comentario', '% Comments'); ?>
+			</div>	 -->
+
+			<div class="control-button"> 
+				<p class='siguele' id='<?php the_ID(); ?>'>Seguir Leyendo... </p> 
+				<p>++ Comentar</p> 
+				<p>Git Fork</p>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo get_permalink(); ?>" data-lang="es">Twittear</a>
+				<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" data-action="like"></div>
+			 </div>
+
 		</article>
 	</li>
 <?php endwhile; ?>
