@@ -23,14 +23,22 @@
           // });
 
       idPost = $(this).attr('id');
-      $('div.screen').removeClass('noneDisplay');
+      $('div.screen').fadeIn(1000);
       $('html').addClass('no_scroll')
-      $('.apend').fadeIn(3000).css({'position':'fixed','top':'30px','left':'15%','right':'15%','width':'800px','height':'600','padding':'10px','background-color':'#FFF','z-index':'100000','boder':'3px solid #DDD','overflow':'scroll'}).load('http://localhost:8888/wordpress/?p='+idPost);
+      $('.apend').fadeIn(1000).css({'position':'fixed','top':'20px','left':'15%','right':'15%','width':'800px','height':'600','padding':'10px','background-color':'#FFF','z-index':'100000','boder':'3px solid #DDD','overflow':'scroll'})
+      $('.singlepost').load('http://localhost:8888/wordpress/?p='+idPost);
 
         
 
 
       });
+
+    $('.closeimg').click(function(){
+       $('.apend').fadeOut(1000);
+       $('div.screen').fadeOut(1000);
+       $('html').removeClass('no_scroll');
+       $('.singlepost').empty();
+    });
 
 		$('.cat-item').find('ul.children').addClass('displayNone');
 		$('#contenido_pestanas div').css('position', 'absolute').not(':first').hide();

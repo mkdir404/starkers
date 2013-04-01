@@ -23,7 +23,10 @@
 
 	</header>
 
-		<div class="apend"></div>
+		<div class="apend">
+			<img class='closeimg' src="<?php bloginfo('template_directory'); ?>/images/close.png">
+			<div class="singlepost"></div>
+		</div>
 <div class="pagecontent">
 
 

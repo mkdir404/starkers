@@ -22,7 +22,7 @@
 
 	<li class="post" >
 		<article class='loop-post' >
-			<h2 class="title-post"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<h2 class="title-post"><a  class='siguele' id='<?php the_ID(); ?>' title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<div class="infoPost <?php the_ID(); ?>">
 				 <?php 
    					echo get_avatar( get_the_author_meta('user_email'), 70); 
