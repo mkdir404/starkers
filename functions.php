@@ -46,9 +46,6 @@
           'after_title' => '</h3>',
      ));
 
-
-	// register_nav_menus(array('primary' => 'Primary Navigation'));
-
 	/* ========================================================================================================================
 	
 	Actions and Filters

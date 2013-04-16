@@ -263,7 +263,6 @@ ul.children{
 }
 
 
-
 .displayNone{
 	display: none;	
 }
@@ -273,15 +272,6 @@ ul.children{
 
 body{
 	background-color: #f1f1f1;
-}
-
-footer{
-	/*background-color: #292929;*/
-	/*background: #292929 url(http://conecti.ca/wp-content/themes/conectica/images/footer_container.png) top center no-repeat;*/
-	height: 10px;
-	margin-top: 40px;
-	clear: both;
-	width: 100%;
 }
 
 a{
@@ -413,18 +403,6 @@ h2.title-post span.sim{
 	height:90px;
 }
 
-/*.auto:before{
-	  content:url(images/user_mini.png);
-	  margin-right: 2px;
-	  
-}
-
-.dateInfo:before{
-	  content:url(images/calendario.png);
-	  margin-right: 2px;
-}*/
-
-
 .auto span{
 	color:#535353;
 	font-weight: 800;
@@ -531,24 +509,6 @@ h2.title-post span.sim{
 }
 
 
-/* ---------------------------------------------------------------------------------------------------------- 
- GIST Control Version and syntaxhighlighter   ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-.gist , .syntaxhighlighter {
-	padding: 8px 0 5px 0;
-}
-
-.gitfork:before{   /*pendiente por asignar */
-
-	content:url('images/github.png');
-	padding-top: 10px;
-	margin-right: 5px;
-	width: 1px
-
-}
-
-
 
 /* ---------------------------------------------------------------------------------------------------------- 
  Category  ------------------------------------------------------------
@@ -582,20 +542,6 @@ h2.title-post span.sim{
 	z-index: 1000;
 	padding: 15px;
 
-}
-
-.sidebar img {
-	width: 200px;
-}
-
-.fb-like-box{
-	background-color: #fff;
-	border: 0px;
-	margin-bottom: 15px;
-}
-
-.fb-facepile{
-	margin-bottom: 15px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------- 

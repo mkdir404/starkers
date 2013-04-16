@@ -1,7 +1,5 @@
 
 	<header>
-
-			<?php  //wp_page_menu('show_home=1&menu_class=submenu'); ?>
 		
 		<!-- <h1><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php bloginfo( 'description' ); ?> -->

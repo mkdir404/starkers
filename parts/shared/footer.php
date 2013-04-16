@@ -1,16 +1,4 @@
 	
 	<footer>
-	
- 
-
-<?php 
-		$pages =  get_pages();
-
-		 // print_r($pages);
-		foreach ($pages as $page) {
-					 $page->ID;
-				}		
-	
- ?>
-		<?php //echo date("Y"); ?> <?php // bloginfo( 'name' ); ?>
+		<p style='color:#333;font-size:10px;'>	DisplaySupport 1280 x 1024 ... or more power by <span style='font-size:25px;'> Mkdir404 </span> </p>
 	</footer>
