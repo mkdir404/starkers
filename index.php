@@ -14,15 +14,13 @@
  */
 ?>
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header','parts/shared/sidebar' ) ); ?>
-
 <?php if ( have_posts() ): ?>
-
 <ol>	
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<li class="post" >
 		<article class='loop-post' >
-			<h2 class="title-post"><a  class='siguele' id='<?php the_ID(); ?>' title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<h2 class="title-post"><a  href="<?php echo get_permalink(); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			<div class="infoPost <?php the_ID(); ?>">
 				 <?php 
    					echo get_avatar( get_the_author_meta('user_email'), 70); 
@@ -32,34 +30,27 @@
 				</p> 
 				
 				<p class='dateInfo'>
-
 					<span class='dDate'><?php echo get_the_date('d'); ?></span> 
 					<span class='myDate'><?php echo get_the_date('M / Y'); ?></span>
 				</p>
 
 			</div>
+
+			<?php if ( has_post_thumbnail() ): ?>
 			<div class="imgThum">	
-				<?php 
-					if ( has_post_thumbnail() ) {
-						the_post_thumbnail();
-					} 
-				
-				 ?>
-			</div>	
+				<?php the_post_thumbnail();?>
+			</div>
+			<?php endif; ?>
+
 			<div class="content-post ">
 					<?php the_content(''); ?>
 			</div>
-			<!-- <div class="commentNum ">
-				<?php //comments_popup_link('++ Comentar', '1 Comentario', '% Comments'); ?>
-			</div>	 -->
 
 			<div class="control-button"> 
-				<p class='siguele' id='<?php the_ID(); ?>'>Seguir Leyendo... </p> 
-				<p>++ Comentar</p> 
-				<p>Git Fork</p>
-				<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo get_permalink(); ?>" data-lang="es">Twittear</a>
-				<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" data-action="like"></div>
-			 </div>
+				<p> <a href="<?php echo get_permalink(); ?>"> Seguir Leyendo... </a></p> 
+				<p><?php comments_popup_link('++ Comentar', '1 Comentario', '% Comments'); ?></p> 
+				<?php socialNetwork( get_permalink() ) ?>
+			</div>
 
 		</article>
 	</li>

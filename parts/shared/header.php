@@ -1,7 +1,7 @@
 
 	<header>
 
-			<?php  wp_page_menu('show_home=1&menu_class=submenu'); ?>
+			<?php  //wp_page_menu('show_home=1&menu_class=submenu'); ?>
 		
 		<!-- <h1><a href="/"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php bloginfo( 'description' ); ?> -->
@@ -13,7 +13,7 @@
 				<p>/*ping pong code*/</p>
 			</div> <!-- end .logo -->
 	
-			<div class="search"><?php get_search_form(); ?></div>
+			<div class="searchmini"><?php get_search_form(); ?></div>
 			<div class="menu">
 				<ul class='menu-2'>
 					<?php wp_list_categories('orderby=ASC&exclude=1&title_li=&hide_empty=0&title_li=');?>

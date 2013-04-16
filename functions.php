@@ -26,7 +26,27 @@
 	======================================================================================================================== */
 
 	add_theme_support('post-thumbnails');
-	
+
+ // The first sidebar
+     if(function_exists('register_sidebar'))
+          register_sidebar(array(
+          'name' => 'Sidebar One', // The sidebar name to register
+          'before_widget' => '<div class="widget">',
+          'after_widget' => '</div>',
+          'before_title' => '<h3>',
+          'after_title' => '</h3>',
+     ));
+     // The second sidebar
+     if(function_exists('register_sidebar'))
+          register_sidebar(array(
+          'name' => 'Sidebar Two', // The sidebar name to register
+          'before_widget' => '<div class="widget">',
+          'after_widget' => '</div>',
+          'before_title' => '<h3>',
+          'after_title' => '</h3>',
+     ));
+
+
 	// register_nav_menus(array('primary' => 'Primary Navigation'));
 
 	/* ========================================================================================================================
@@ -115,7 +135,7 @@
 		$i=1;
 		global $wpdb;
 		
-       	 $queryComment = $wpdb->get_results("SELECT guid , post_title 
+       	 $queryComment = $wpdb->get_results("SELECT id,guid , post_title 
        	 										FROM wp_posts 
        	 											WHERE post_type = 'post' 
        	 												AND post_status = 'publish'  
@@ -125,7 +145,7 @@
            if(count($queryComment) > 0){
 
                 foreach ($queryComment as  $value) {
-                 	echo '<li><span>'.$i.'</span><a href ="'.$value->guid.'" >'.$value->post_title.'</a></li>';
+                 	echo '<li><span>'.$i.'</span><a href="'.$value->guid.'" >'.$value->post_title.'</a></li>';
                  	$i+=1;   
                 }
 
@@ -134,9 +154,26 @@
             }
 	}
 
-	function hola(){
-		return 'hola';
+		/* ========================================================================================================================
+	
+	SocialNetwork
+	
+	======================================================================================================================== */
+
+	/**
+	 * Custom callback for outputting post y comentarios  recientes  
+	 *
+	 * @return string
+	 * @author Ricardo Alba
+	 */
+
+	function socialNetwork($args){
+		echo  '<div class="fb-like" data-href="'.$args.'" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" data-action="like"></div>
+			   <a href="https://twitter.com/share" class="twitter-share-button" data-url="'.$args.'" data-lang="es">Twittear</a>';
+
 	}
+
+	
 
 
 

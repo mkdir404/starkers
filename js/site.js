@@ -1,65 +1,31 @@
 
 	jQuery(document).ready(function($) {
+  
+/*widget*/
 
-   var  navegaW = $(this).width(),
-        navegaH = $(this).height();
-      
-
-    $('.siguele').click(function(){
-        var y = - (navegaH / 2 ) * .02;
-         var x = $(document).scrollTop();
-          var result = x + y;
-            var resultAjax = '';
-
-          // $.ajax({
-          //   type: "POST",
-          //   dataType : "json",
-          //   url: "wp-content/themes/starkers/ajaxrequest.php",
-          //   data: { name: "John", location: "Boston" } 
-          // }).done(function( resultAjax ) {
-          //   console.log( resultAjax );  
-          //   
-        
-          // });
-
-      idPost = $(this).attr('id');
-      $('div.screen').fadeIn(1000);
-      $('html').addClass('no_scroll')
-      $('.apend').fadeIn(1000).css({'position':'fixed','top':'20px','left':'15%','right':'15%','width':'800px','height':'600','padding':'10px','background-color':'#FFF','z-index':'100000','boder':'3px solid #DDD','overflow':'scroll'})
-      $('.singlepost').load('http://localhost:8888/wordpress/?p='+idPost);
-
-        
-
-
-      });
-
-    $('.closeimg').click(function(){
-       $('.apend').fadeOut(1000);
-       $('div.screen').fadeOut(1000);
-       $('html').removeClass('no_scroll');
-       $('.singlepost').empty();
-    });
-
-		$('.cat-item').find('ul.children').addClass('displayNone');
-		$('#contenido_pestanas div').css('position', 'absolute').not(':first').hide();
+		  $('#contenido_pestanas div').css('position', 'absolute').not(':first').hide();
     	$('#contenido_pestanas ul li:first a').addClass('aqui');
 
+        $('#contenido_pestanas :first a').click(function(){
+          
+          $('#contenido_pestanas a').removeClass('aqui');
+          $(this).addClass('aqui');
+          $('#contenido_pestanas div').fadeOut(350).filter(this.hash).fadeIn(350);
+        
+          return false;
+        
+      });
+
+/*Menu Cat*/
+
 		$('.cat-item').hover(function(){
-			$(this).find('ul.children').removeClass('displayNone');
+			$(this).find('ul.children').css('display','inline');
 		},function () {
-   			$(this).find('ul.children').addClass("displayNone");
+   			$(this).find('ul.children').css('display','none');
  		  }
 		);
 	
-    	$('#contenido_pestanas :first a').click(function(){
-        	
-        	$('#contenido_pestanas a').removeClass('aqui');
-       		$(this).addClass('aqui');
-       		$('#contenido_pestanas div').fadeOut(350).filter(this.hash).fadeIn(350);
-       	
-       		return false;
-        
-    	});
+/*Data and Author info */
 
     	$('.loop-post').hover(function(){
     		
@@ -69,8 +35,7 @@
 
     		 $("."+findId).animate({"left": "-=90px"}, "slow");
 		},function () {
-			
-   			 $("."+findId).delay(800).animate({"left": "+=90px"}, "slow");
+			   $("."+findId).delay(800).animate({"left": "+=90px"}, "slow");
  		  }
 		);
 
