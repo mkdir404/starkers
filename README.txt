@@ -6,8 +6,6 @@
 
 	- - - - - - - - - - - - - - - - - - - - - - -
 
-	![My image](/starkers/images/testTemplateWP.png)
-
 
 
 
